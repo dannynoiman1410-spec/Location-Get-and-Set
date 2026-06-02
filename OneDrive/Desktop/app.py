@@ -31,7 +31,6 @@ with col2:
 status_placeholder = st.empty()
 status_placeholder.info(st.session_state.status)
 
-@st.cache_data(show_spinner=False)
 def get_bearer_token():
     auth_url = "https://api.wiliot.com/v1/auth/token/api"
     headers = {
